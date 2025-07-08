@@ -1,0 +1,25 @@
+steps:
+  - name: Get Code
+    image: docker.io/library/alpine:latest
+    security:
+      user: 0
+    volumes:
+      code: /code
+    runs: |
+      apk add git
+      git clone https://github.com/mesaglio/calculadora /code
+  
+  - name: Test and Build
+    image: docker.io/library/golang:alpine
+    volumes:
+      code: /code
+    security:
+      user: 0
+    runs: |
+      cd /code
+      
+      go mod tidy -v 2>&1
+      go test -v ./... || exit 1
+      
+      go build -o calculadora main.go || exit 1
+      ./calculadora 1 + 2 || exit 1
