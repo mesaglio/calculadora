@@ -1,8 +1,22 @@
 package calculadora
 
 import (
+	"os"
 	"testing"
+
+	"go.uber.org/zap"
 )
+
+// TestMain inicializa un logger de desarrollo de zap para que se muestren los logs durante las pruebas.
+func TestMain(m *testing.M) {
+	logger, _ := zap.NewDevelopment()
+	undo := zap.ReplaceGlobals(logger)
+	defer func() {
+		_ = logger.Sync()
+		undo()
+	}()
+	os.Exit(m.Run())
+}
 
 func TestSuma(t *testing.T) {
 	tests := []struct {

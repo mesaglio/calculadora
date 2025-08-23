@@ -3,6 +3,7 @@ steps:
     image: docker.io/library/alpine:latest
     security:
       user: 0
+      allowed_endpoints: ["github.com:443", "dl-cdn.alpinelinux.org:443"]
     volumes:
       code: /code
     runs: |
@@ -13,7 +14,14 @@ steps:
     image: docker.io/library/golang:alpine
     volumes:
       code: /code
+    env:
+      GOCACHE: /go/cache
+      GOMODCACHE: /go/pkg/mod
+    cache:
+      go-cache: /go/cache
+      go-deps: /go/pkg/mod
     security:
+      allowed_endpoints: ["proxy.golang.org:443"]
       user: 0
     runs: |
       cd /code
