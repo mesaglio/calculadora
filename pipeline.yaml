@@ -9,6 +9,8 @@ steps:
 
   - name: test
     image: golang:1.24
+    depends_on:
+      - download-deps
     cache:
       go-mod-cache: /root/go/pkg/mod
     tasks:
