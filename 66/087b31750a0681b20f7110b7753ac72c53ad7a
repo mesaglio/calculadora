@@ -1,0 +1,31 @@
+calculadora/test_calculator.py
+  s_15f15f7108bd21::t_fbd10ee2391111 1-52
+pipeline.yaml
+  s_15f15f7108bd21::t_0dd1962bf89b2c 6
+  h_3ccbf5357bfbb7 3
+calculadora/calculator.py
+  s_15f15f7108bd21::t_d12d45b160763f 1-23
+main.py
+  s_15f15f7108bd21::t_65d91747a615f6 1-31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "66087b31750a0681b20f7110b7753ac72c53ad7a",
+  "prompts": {},
+  "humans": {
+    "h_3ccbf5357bfbb7": {
+      "author": "Juan Mesaglio <juan.mesaglio@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_15f15f7108bd21": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e4d750d8-540e-44d9-ba59-ca3dd7a8a14a",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Juan Mesaglio <juan.mesaglio@gmail.com>"
+    }
+  }
+}
