@@ -1,16 +1,6 @@
 steps:
-  - name: download-deps
-    image: golang:1.24
-    cache:
-      go-mod-cache: /root/go/pkg/mod
-    tasks:
-      - name: download
-        runs: go mod download
-
   - name: test
-    image: golang:1.24
-    cache:
-      go-mod-cache: /root/go/pkg/mod
+    image: python:alpine
     tasks:
       - name: run tests
-        runs: go test -v ./...
+        runs: python -m unittest discover -v
