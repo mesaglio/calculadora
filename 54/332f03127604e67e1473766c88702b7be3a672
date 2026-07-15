@@ -1,0 +1,16 @@
+python-test.yaml
+  h_3ccbf5357bfbb7 1-5
+pipeline.yaml
+  h_3ccbf5357bfbb7 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "54332f03127604e67e1473766c88702b7be3a672",
+  "prompts": {},
+  "humans": {
+    "h_3ccbf5357bfbb7": {
+      "author": "Juan Mesaglio <juan.mesaglio@gmail.com>"
+    }
+  }
+}
