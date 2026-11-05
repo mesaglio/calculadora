@@ -1,6 +1,6 @@
 steps:
   - name: test
-    image: python:alpine
+    image: cgr.dev/chainguard/python:latest-dev
     tasks:
       - name: run tests
         runs: cd python && python -m unittest discover -v
