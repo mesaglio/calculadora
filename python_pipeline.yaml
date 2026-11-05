@@ -3,4 +3,4 @@ steps:
     image: python:alpine
     tasks:
       - name: run tests
-        runs: python -m unittest discover -v
+        runs: cd python && python -m unittest discover -v
