@@ -1,0 +1,6 @@
+steps:
+  - name: test
+    image: node:alpine
+    tasks:
+      - name: run tests
+        runs: cd node && npm test
