@@ -1,0 +1,13 @@
+Modifiquemos las imagenes que usan lo pipelines publicas de docker para que usen las de chainguard que son mas seguras
+
+---
+
+Si
+
+---
+
+si, no hagas el plan. Ejecutalo
+
+---
+
+hace el commit, pushea y hace el pr
