@@ -1,0 +1,29 @@
+Hace un nuevo branch que se llame bash-test
+
+---
+
+autorizo
+
+---
+
+Ahora quiero que reordenemos los directorios, en el repo hay un poryecto de python y un pipeline, creemos un directorio de la tecnologia python y movamos todo ahi adentro
+
+---
+
+si
+
+---
+
+si
+
+---
+
+no hace falta hacer un plan, ejecutalo
+
+---
+
+renombre el pipeline.yaml a python_pipeline.yaml
+
+---
+
+Hace el commit y el push
