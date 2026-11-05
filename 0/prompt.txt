@@ -1,0 +1,25 @@
+Ahora quiero que hagamos el mismo proyecto que la calculadora de python, pero en node
+
+---
+
+cual es el mas rapido?
+
+---
+
+si
+
+---
+
+si
+
+---
+
+si
+
+---
+
+no hagas un plan, ejecuta
+
+---
+
+hace el commit y pushea. Quiero que validemos la config de entire, yo edite a mano el archivo para subir las sessiones ahora. Quiero validar que eso ahora tenga efecto o que deberia hacer para que lo tenga
