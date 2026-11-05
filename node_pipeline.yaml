@@ -1,6 +1,6 @@
 steps:
   - name: test
-    image: node:alpine
+    image: cgr.dev/chainguard/node:latest-dev
     tasks:
       - name: run tests
         runs: cd node && npm test
